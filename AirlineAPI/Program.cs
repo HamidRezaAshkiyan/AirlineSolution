@@ -8,6 +8,8 @@ builder.Services
        .AddDbContext<AirlineContext>(opt =>
                                           opt.UseSqlServer
                                               (builder.Configuration.GetConnectionString("AirlineDB")));
+
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped<IPersonRepo, SqlPersonRepo>();
 
 builder.Services.AddControllers();

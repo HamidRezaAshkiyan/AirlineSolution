@@ -11,6 +11,11 @@ public class SqlPersonRepo: IPersonRepo
         _context = context;
     }
 
+    public bool SaveChanges()
+    {
+        return _context.SaveChanges() >= 0;
+    }
+
     public IEnumerable<Person> GetAllPeople()
     {
         return _context.People.ToList();
@@ -19,5 +24,12 @@ public class SqlPersonRepo: IPersonRepo
     public Person              GetPersonById(int id)
     {
         return _context.People.SingleOrDefault(p => p.Id == id);
+    }
+
+    public void CreatePerson(Person person)
+    {
+        if (person is null)
+            throw new ArgumentNullException(nameof(person));
+        _context.People.Add(person);
     }
 }

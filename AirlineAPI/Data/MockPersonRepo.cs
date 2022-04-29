@@ -4,16 +4,26 @@ namespace AirlineAPI.Data;
 
 public class MockPersonRepo : IPersonRepo
 {
-    public List<Person> People = new() {
+    private readonly List<Person> _people = new() {
         new Person {Id = 1, FirstName = "hamid", LastName   = "hamidi", Age   = 21},
-        new Person {Id = 1, FirstName = "Jamshid", LastName = "Jamshidi", Age = 21}
+        new Person {Id = 2, FirstName = "Jamshid", LastName = "Jamshidi", Age = 21}
     };
 
+    public bool SaveChanges()
+    {
+        throw new NotImplementedException();
+    }
+
     public IEnumerable<Person> GetAllPeople() {
-        return People;
+        return _people;
     }
 
     public Person GetPersonById(int id) {
-        return People.FirstOrDefault(p => p.Id == id) ?? throw new InvalidOperationException();
+        return _people.FirstOrDefault(p => p.Id == id) ?? throw new InvalidOperationException();
+    }
+
+    public void CreatePerson(Person person)
+    {
+        throw new NotImplementedException();
     }
 }

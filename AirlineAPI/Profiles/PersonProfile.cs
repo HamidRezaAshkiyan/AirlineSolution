@@ -1,5 +1,4 @@
-﻿using Airline.DataAccess.Library.Models;
-using AirlineAPI.Models;
+﻿using Airline.DataAccess.Sqlite.Library.Models;
 using AirlineAPI.Models.DTOs;
 using AutoMapper;
 

@@ -40,7 +40,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Airline.DataAccess.Library\Airline.DataAccess.Library.csproj" />
+    <ProjectReference Include="..\Airline.DataAccess.Sqlite.Library\Airline.DataAccess.Sqlite.Library.csproj" />
   </ItemGroup>
 
 </Project>

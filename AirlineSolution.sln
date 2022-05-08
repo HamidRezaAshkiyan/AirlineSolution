@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineAPI", "AirlineAPI\Ai
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airline.DataAccess.Library", "Airline.DataAccess.Library\Airline.DataAccess.Library.csproj", "{DFCC5F10-E05C-4560-8B65-87F5F920314E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airline.DataAccess.Sqlite.Library", "Airline.DataAccess.Sqlite.Library\Airline.DataAccess.Sqlite.Library.csproj", "{D777C31A-E4C4-46EB-B81F-4BBCDBE91F1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DFCC5F10-E05C-4560-8B65-87F5F920314E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFCC5F10-E05C-4560-8B65-87F5F920314E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFCC5F10-E05C-4560-8B65-87F5F920314E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D777C31A-E4C4-46EB-B81F-4BBCDBE91F1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D777C31A-E4C4-46EB-B81F-4BBCDBE91F1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D777C31A-E4C4-46EB-B81F-4BBCDBE91F1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D777C31A-E4C4-46EB-B81F-4BBCDBE91F1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

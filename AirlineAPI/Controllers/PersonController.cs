@@ -1,6 +1,5 @@
-﻿using Airline.DataAccess.Library.Data;
-using Airline.DataAccess.Library.Models;
-using AirlineAPI.Models;
+﻿using Airline.DataAccess.Sqlite.Library.Data;
+using Airline.DataAccess.Sqlite.Library.Models;
 using AirlineAPI.Models.DTOs;
 using AutoMapper;
 using Microsoft.AspNetCore.JsonPatch;

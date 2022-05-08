@@ -1,14 +1,19 @@
-using Airline.DataAccess.Library.Data;
+using Airline.DataAccess.Sqlite.Library.Data;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json.Serialization;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+// builder.Services
+//        .AddDbContext<AirlineContext>(opt =>
+//                                           opt.UseSqlServer
+//                                               (builder.Configuration.GetConnectionString("AirlineDB")));
+
 builder.Services
        .AddDbContext<AirlineContext>(opt =>
-                                          opt.UseSqlServer
-                                              (builder.Configuration.GetConnectionString("AirlineDB")));
+                                          opt.UseSqlite
+                                              (builder.Configuration.GetConnectionString("AirlineSqliteDB")));
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped<IPersonRepo, SqlPersonRepo>();

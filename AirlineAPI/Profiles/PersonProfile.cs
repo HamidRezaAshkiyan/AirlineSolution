@@ -10,5 +10,7 @@ public class PersonProfile : Profile
     {
         CreateMap<Person, PersonReadDto>();
         CreateMap<PersonCreateDto, Person>();
+        CreateMap<PersonUpdateDto, Person>();
+        CreateMap<Person, PersonUpdateDto>();
     }
 }

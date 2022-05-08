@@ -32,4 +32,16 @@ public class SqlPersonRepo: IPersonRepo
             throw new ArgumentNullException(nameof(person));
         _context.People.Add(person);
     }
+
+    public void UpdatePerson(Person person)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void DeletePerson(Person person)
+    {
+        if (person is null)
+            throw new ArgumentNullException(nameof(person));
+        _context.People.Remove(person);
+    }
 }

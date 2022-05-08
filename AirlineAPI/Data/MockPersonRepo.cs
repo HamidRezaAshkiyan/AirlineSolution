@@ -26,4 +26,14 @@ public class MockPersonRepo : IPersonRepo
     {
         throw new NotImplementedException();
     }
+
+    public void UpdatePerson(Person person)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void DeletePerson(Person person)
+    {
+        throw new NotImplementedException();
+    }
 }

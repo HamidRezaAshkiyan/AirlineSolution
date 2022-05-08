@@ -1,5 +1,5 @@
-﻿using System.Security.Cryptography.X509Certificates;
-using AirlineAPI.Data;
+﻿using Airline.DataAccess.Library.Data;
+using Airline.DataAccess.Library.Models;
 using AirlineAPI.Models;
 using AirlineAPI.Models.DTOs;
 using AutoMapper;

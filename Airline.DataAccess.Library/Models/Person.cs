@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace AirlineAPI.Models;
+namespace Airline.DataAccess.Library.Models;
 
 public class Person
 {

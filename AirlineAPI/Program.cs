@@ -1,4 +1,4 @@
-using AirlineAPI.Data;
+using Airline.DataAccess.Library.Data;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json.Serialization;
 
